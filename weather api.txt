@@ -1,0 +1,4 @@
+api key:- dd1071165395b404b93c418c6c5bcf41
+
+weather api link
+https://api.openweathermap.org/data/2.5/weather?q=delhi&appid=dd1071165395b404b93c418c6c5bcf41

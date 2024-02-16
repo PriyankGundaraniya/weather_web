@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   {{>headerlinks}}
+</head>
+
+<body>
+<!------------------header------------------>
+    <div class="container-fluid main_menu">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <nav class="navbar navbar-expand-lg  ">
+                    <a class="navbar-brand" href="#"> <i class="bi bi-bar-chart-fill"></i>PRIYANK</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/weather">weather</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">about </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+<!---main header---->  
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!--left side div-->
+                    <div class="col-md-6 col-12 main_right_header ">
+                        <figure class="about">
+                             <img src="img/404.jpg" alt="priyank" class="img-fluid" title="priyank gundaraniya">
+                        </figure>
+                     </div>
+                    <!--right side div-->
+                    <div class="col-md-6 col-12 main_left_header align-item-center">
+                        <p>Hello ,</p>
+                        <h1>   <span class="text_color"> Opps !!</span> Page Not Found</h1>
+                        <a href="/" > <button>go back</button> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>       
+       {{>footer}}
+</body>
+</html>

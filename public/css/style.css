@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400;8..30,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Piazzolla",serif; 
+}
+
+:root{
+    --main-bg : #1e272e;
+    --main-color : #0097e6;
+}
+
+html{
+    font-size: 62.5%; 
+    /* 1rem = 10px */
+}
+.row{
+    margin: 0;
+}
+
+.main_menu{
+    background-color: var(--main-bg);
+    padding: 1rem;
+}
+.navbar{
+    color: #fff;
+    background-color: var(--main-bg);
+    /* padding: 2rem 0;  */
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+    display: block;
+    margin: 0 2rem 0 2rem;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+    
+}
+
+.navbar-toggler{
+    background-color: antiquewhite;
+}
+
+/* main header */
+
+.main_left_header{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_right_header{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_left_header p{
+    font-size: 2rem;
+}
+
+.main_left_header h1{
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+
+.text_color{
+    color: var(--main-color);
+}
+
+.main_left_header button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 4px -6px black;
+    outline: none ;
+    transition: all 0.3s linear;
+
+
+
+}
+
+.main_left_header button:hover{
+    background-color: var(--main-bg);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 7rem;
+    font-size: 1.6rem;
+}
+/* footer ne niche lavva mate body ma css apvi chhvi */
+body{
+height: 100vh;
+display: flex ;
+flex-direction: column;
+}
+
+/* about us page */
+
+.main_right_header figure img{
+    /* box-shadow: 0 22px 14px -6px black; */
+    filter: drop-shadow(0.5rem 1.5rem 1rem rgba(0 ,0, 0, 1));
+    border-radius: 1.2rem ;
+
+}
+
+/* error page   */
+
+.errimg{
+    display: flex;
+    padding: 0;
+    margin:  auto;
+    width: 60rem;
+    height: 40rem;
+
+}
+
+.errpara{  
+    text-align: center;
+    margin: 0;
+}
+.err h1{
+    margin: 0;
+}
+.err button{
+    display: flex;
+    margin: auto ;
+    width: 100%;
+    
+}
+.err{
+    padding: 0;
+    margin: 0;
+}
+
+/* weather page  */
+
+.tempinfo{
+    width: 50rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: 'Roboto',sans-serif;
+    color: #fff;
+}
+.top_layer{
+    width: 100%;
+    height: 20%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 2rem 0;
+
+}
+.top_layer p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.main_layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+.main_layer #city_name{
+    padding: 2rem 0;
+    color: #bfc1c8;
+    font-weight:300 ;
+    font-size: 2rem;
+}
+.main_layer .middle_layer{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+.main_layer .middle_layer p{
+    font-size: 7rem;
+    font-weight: 900;
+}
+sup{
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+/* temprature input search field  */
+
+.temp_form{
+    width: 60%;
+    position: relative;
+    margin: auto;
+}
+.temp_form input[type="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 5rem;
+    background-color: #1e202b;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+}
+
+::placeholder{
+    color: #bfc1c8;
+}
+
+.temp_form input[type="submit"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8;
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: #fff;
+    font-size: 1.6rem;
+    transition: all 0.3s linear;
+
+    
+}
+.temp_form input[type="submit"]:hover{
+    color: #009ad8;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+
+.main_content{
+    margin:8rem 0 6rem 0;
+}
